@@ -19,7 +19,7 @@ pip install git+https://github.com/rohitgarud/Asreview-Ensemble-Classifiers.git
 
 ## Usage
 
-There are currently four different ensemble classifiers are available: `ensemble_nb_lr` (NB+LR), `ensemble_nb_rf` (NB+RF), `ensemble_lr_rf` (LR+RF), `ensemble_nb_lr_rf` (NB+LR+RF). Simulations can be performed using the simulation mode from ASReview CLI using:
+Four different ensemble classifiers are currently available: `ensemble_nb_lr` (NB+LR), `ensemble_nb_rf` (NB+RF), `ensemble_lr_rf` (LR+RF), `ensemble_nb_lr_rf` (NB+LR+RF). Simulations can be performed using the simulation mode from ASReview CLI using:
 
 ```bash
 asreview simulate example_data_file.csv -m ensemble_nb_lr
