@@ -4,7 +4,7 @@ from asreviewcontrib.models.ensemble_classifier import EnsembleClassifier
 
 
 class EnsembleNBLRClassifier(BaseTrainClassifier):
-    """Simple Average Ensemble of Naive Bayes and Logistic Regression classifier"""
+    """Ensemble of Naive Bayes and Logistic Regression classifier"""
 
     name = "ensemble_nb_lr"
     label = "Ensemble NB-LR"
@@ -43,7 +43,7 @@ class EnsembleNBLRClassifier(BaseTrainClassifier):
 
 
 class EnsembleNBRFClassifier(BaseTrainClassifier):
-    """Simple Average Ensemble of Naive Bayes and Logistic Regression classifier"""
+    """Ensemble of Naive Bayes and Random Forest classifier"""
 
     name = "ensemble_nb_rf"
 
@@ -80,7 +80,7 @@ class EnsembleNBRFClassifier(BaseTrainClassifier):
 
 
 class EnsembleLRRFClassifier(BaseTrainClassifier):
-    """Simple Average Ensemble of Naive Bayes and Logistic Regression classifier"""
+    """Ensemble of Logistic Regression and Random Forest classifier"""
 
     name = "ensemble_lr_rf"
 
@@ -121,7 +121,7 @@ class EnsembleLRRFClassifier(BaseTrainClassifier):
 
 
 class EnsembleNBLRRFClassifier(BaseTrainClassifier):
-    """Simple Average Ensemble of Naive Bayes and Logistic Regression classifier"""
+    """Ensemble of Naive Bayes, Logistic Regression and Random Forest classifier"""
 
     name = "ensemble_nb_lr_rf"
 
