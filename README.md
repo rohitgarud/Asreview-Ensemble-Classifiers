@@ -22,8 +22,10 @@ pip install git+https://github.com/rohitgarud/Asreview-Ensemble-Classifiers.git
 Four different ensemble classifiers are currently available: `ensemble_nb_lr` (NB+LR), `ensemble_nb_rf` (NB+RF), `ensemble_lr_rf` (LR+RF), `ensemble_nb_lr_rf` (NB+LR+RF). Simulations can be performed using the simulation mode from ASReview CLI using:
 
 ```bash
-asreview simulate example_data_file.csv -m ensemble_nb_lr
+asreview simulate example_data_file.csv -m ensemble_nb_lr -e tfidf
 ```
+If Naive Bayes is part of the ensemble, we have to use the TFIDF features. However, if only the Logistic and Random Forrest ensemble is used, we can use other features such as Doc2Vec or SBERT.
+
 Also, a comprehensive simulation study can be performed using the  [ASReview Makita Extension](https://github.com/asreview/asreview-makita) (follow the instructions on the extension GitHub page). One example of simulation using is a comparison of NB and Ensemble of NB and LR classifiers can be performed using:
 ```bash
 asreview makita template multiple_models --classifiers nb ensemble_nb_lr --feature_extractors tfidf -f jobs.bat
